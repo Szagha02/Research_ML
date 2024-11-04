@@ -34,7 +34,6 @@ def Lpips_compute(dataset_path, results_file):
     df = pd.DataFrame(results, columns=["Image1", "Image2", "LPIPS_Distance"])
     return df
 
-# Function to save LPIPS scores to Excel
 def save_to_excel(df, output_file, sheet_name):
     if os.path.exists(output_file):
         with pd.ExcelWriter(output_file, mode='a', engine='openpyxl') as writer:

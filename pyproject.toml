@@ -1,0 +1,23 @@
+[project]
+name = "Fidelity and Quality"
+version = "0.1.0"
+description = "A description of your project"
+authors = [
+    { name = "Sami Zagha", email = "szagha2@gmail.com" }
+]
+dependencies = [
+    "torch",
+    "torchvision",
+    "tensorflow",
+    "stlpips_pytorch",
+    "lpips-pytorch @ git+https://github.com/S-aiueo32/lpips-pytorch.git@master",
+    "PerceptualSimilarity @ git+https://github.com/richzhang/PerceptualSimilarity.git@master",
+    "ShiftTolerant-LPIPS @ git+https://github.com/abhijay9/ShiftTolerant-LPIPS.git@main",
+    "R-LPIPS @ git+https://github.com/SaraGhazanfari/R-LPIPS.git@main",
+    "lpips-tensorflow @ git+https://github.com/alexlee-gk/lpips-tensorflow.git@master",
+    "elpips @ git+https://github.com/mkettune/elpips.git@master"
+]
+
+# Add this configuration for the `src` layout
+packages = ["your_package"]
+package_dir = {"" = "src"}
